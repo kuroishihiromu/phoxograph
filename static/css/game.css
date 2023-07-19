@@ -1,0 +1,97 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.game-imageinput{
+    
+    /* 余白 */
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    /* テキスト */
+
+    
+}
+
+.fukidashi{
+    background-color:  rgba(95, 71, 2, 0.733);
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    /* 吹き出しに下向き三角をつけて */
+    position: relative;
+}
+
+/* 吹き出しに下向き三角を付けて */
+.fukidashi::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: 15px solid transparent;
+    border-top-color: rgba(95, 71, 2, 0.733);
+    margin-bottom: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img{
+    margin-top: 250px;
+}
+
+/* .game-imageinput formのボタンをデザイン */
+.game-imageinput form input[type="submit"]{
+    background-color: rgb(84, 146, 147);
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.game-imageinput form input[type="file"]::file-selector-button{
+    background-color: rgb(139, 124, 74);
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.game-imageinput form input[type="file"]::file-selector-button:hover,.game-imageinput form input[type="submit"]:hover{
+    opacity: 0.4;
+}
+
+.game-head1{
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: rgb(215, 205, 178);
+}

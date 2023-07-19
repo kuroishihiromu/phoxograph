@@ -1,0 +1,55 @@
+*{
+    /* 余白 */
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar{
+    /* サイズ */
+    width: 100%;
+
+    /* 余白 */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* 形 */
+    /* backgroundcolorをレトロなロボットの色 */
+    background-color: #ada188;
+
+    /* 配置 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    /* 余白 */
+    margin-right:50px;
+    margin-left: 50px;
+
+    /* テキスト */
+    text-decoration: none;
+    color: black;
+}
+
+.header-nation{
+    /* 余白 */
+    margin-right:10px;
+    margin-left: 10px;
+
+    /* 上下中央揃え */
+    display: flex;
+    align-items: center;
+
+    /* テキスト */
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.header-nation a{
+    /* テキスト */
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}

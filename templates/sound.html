@@ -1,0 +1,49 @@
+<html lang="ja">
+<head>
+    <title>Top</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/game.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/sound.css">
+</head>
+
+
+<body>
+    <header class="header-bar">
+        <a href="/top"  class="header-logo"><h1>pho"X"ograph</h1></a>
+        <div class="header-nation">
+            <a href="/game">game</a>
+            <a href="/top">top</a>
+            <!-- <a href="/result">result</a> -->
+        </div>
+    </header>
+
+    <h1 class="sound-paragraph">player:{{count}}は音声を聴いてください.</h1>
+    <div  class="flex">
+        <div>
+            <div class="game-soundsoutput">
+                <h2>Generated Sound</h2>
+                <audio controls>
+                    <source src="{{soundfile}}" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            {% if condition %}
+            <div class="sound-answer">
+                <h1>最初にアップロードされた画像の名前は？</h1>
+                <form  method="POST" enctype="multipart/form-data" action="/text">
+                    <input class="answer-upload-bytext" type="text" name="text" value="解答を入力">
+                    <input class="answer-upload" type="submit" value="結果を見る">
+                </form>
+            </div>
+            {% else%}
+                <a href="/game" class="sound-imageinput">画像入力へ</a>
+            {% endif %}
+        </div>
+        <div class="img-margin">
+            <div class="fukidashi">pho"n"ography mode...</div>
+            <img src="../static/images/icon.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

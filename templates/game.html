@@ -1,0 +1,47 @@
+<html lang="ja">
+<head>
+    <title>Top</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/game.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+</head>
+
+
+<body>
+    <header class="header-bar">
+        <a href="/top"  class="header-logo"><h1>pho"X"ograph</h1></a>
+        <div class="header-nation">
+            <a href="/game">game</a>
+            <a href="/top">top</a>
+            <!-- <a href="/result">result</a> -->
+        </div>
+    </header>
+    <div class="flex">
+        <div class="game-imageinput">
+    
+            <div class="game-head1">
+                <h1>Upload the image...</h1>
+            </div>
+    
+            <form method="POST" enctype="multipart/form-data" action="/upload">
+                <input type="file" name="file" accept="image/*">
+                <br>
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+        <div class="img">
+            <div class="fukidashi">pho"t"ography mode...</div>
+            <img src="../static/images/icon.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    // <audio> 要素を取得します
+    var audioElement = document.querySelector(".game-soundsoutput audio");
+
+    // <audio> 要素を再生します
+    audioElement.play();
+</script>

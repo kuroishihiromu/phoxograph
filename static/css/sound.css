@@ -1,0 +1,118 @@
+.sound-paragraph{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+}
+
+.game-soundsoutput{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 80px;
+}
+
+.sound-imageinput{ 
+    /* サイズ */
+    width: 200px;
+
+    /* 余白 */
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+
+    /* テキスト */
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    /* 形 */
+    background-color: rgba(74, 52, 0, 0.733);
+    border: none;
+    display:block;
+    border-radius: 12px;
+}
+
+.sound-imageinput:hover {
+    opacity: 0.4;
+}
+
+.sound-answer{
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.answer-upload-bytext{
+    background-color: rgb(193, 193, 193);
+
+    /* 黒い枠線で要素を囲む */
+    border: solid 2px gray;
+    border-radius: 12px;
+    color: gray;
+    cursor: pointer;
+    font-size: 15px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.answer-upload{
+    background-color: rgba(74, 52, 0, 0.733);
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fukidashi{
+    background-color:  rgba(95, 71, 2, 0.733);
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    /* 吹き出しに下向き三角をつけて */
+    position: relative;
+}
+
+/* 吹き出しに下向き三角を付けて */
+.fukidashi::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: 15px solid transparent;
+    border-top-color: rgba(95, 71, 2, 0.733);
+    margin-bottom: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-margin{
+
+    margin-right: 80px;
+}
+
+body{
+    background-color: rgb(215, 205, 178);
+}

@@ -1,0 +1,32 @@
+<html lang="ja">
+<head>
+    <title>Top</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/result.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+</head>
+
+
+<body>
+    <header class="header-bar">
+        <a href="/top"  class="header-logo"><h1>pho"X"ograph</h1></a>
+        <div class="header-nation">
+            <a href="/game">game</a>
+            <a href="/top">top</a>
+            <!-- <a href="/result">result</a> -->
+        </div>
+    </header>
+    <div class="result">
+        <h1 class="result-h1">結果</h1>
+        <h1 class="result-h2">player{{count}}は、「 <span>{{text}}</span>」と予想しました。</h1>
+        <div class="imagelist-title">みんながアップロードした画像</div>
+        {%for i in range(filepaths_len):%}
+            <div class="border"></div>
+            <h1 class="playername">player{{i+1}}</h1>
+            <img src="{{filepaths[i]}}" alt="" width="200" class="image-margin">
+        {%endfor%}
+        <div class="border"></div>
+    </div>
+    
+</body>
+</html>

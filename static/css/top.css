@@ -1,0 +1,62 @@
+.top-title{
+    /* 余白 */
+    margin-top: 100px;
+    /* テキスト */
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.top-account{
+    /* 余白 */
+    margin-top: 50px;
+    /* テキスト */
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+
+
+.button1{
+    
+    /* サイズ */
+    width: 200px;
+
+    /* 余白 */
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    /* テキスト */
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+
+    /* 形 */
+    background-color: rgba(74, 52, 0, 0.733);
+    border: none;
+    display:block;
+    border-radius: 20px;
+}
+
+/* button1にカーソルをあてると、色が暗くなるように変更 */
+.button1:hover {
+    opacity: 0.4;
+}
+
+.container{
+    width: 30%;
+    margin: auto;
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+}
+
+body{
+    background-color: rgb(215, 205, 178);
+}

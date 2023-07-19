@@ -1,0 +1,46 @@
+.result{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 80px;
+}
+
+.result-h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-h2{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result-h2 span{
+    color: rgb(150, 82, 82);
+}
+
+.border{
+    border-top: solid 2px rgb(150, 82, 82);
+    padding: 10px;
+}
+
+.imagelist-title{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.playername{
+    margin-bottom: 12.5px;
+}
+
+.image-margin{
+    margin-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+    background-color: rgb(215, 205, 178);
+}
